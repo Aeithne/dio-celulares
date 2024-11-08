@@ -30,3 +30,9 @@ public class Samsung : Celular
         Console.WriteLine("Samsung ligado com digital.");
     }
 }
+
+var iphone14 = new Iphone { Marca = "Apple", Modelo = "iPhone 14" };
+var galaxyS23 = new Samsung { Marca = "Samsung", Modelo = "Galaxy S23" };
+
+iphone14.Ligar(); // Saída: iPhone ligado com Face ID.
+galaxyS23.Ligar(); // Saída: Samsung ligado com digital.
