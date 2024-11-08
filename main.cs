@@ -13,3 +13,20 @@ public class Celular
         Console.WriteLine("Celular desligado.");
     }
 }
+
+// Classes filhas (exemplos)
+public class Iphone : Celular
+{
+    public override void Ligar()
+    {
+        Console.WriteLine("iPhone ligado com Face ID.");
+    }
+}
+
+public class Samsung : Celular
+{
+    public override void Ligar()
+    {
+        Console.WriteLine("Samsung ligado com digital.");
+    }
+}
