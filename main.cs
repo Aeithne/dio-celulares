@@ -12,6 +12,20 @@ public class Celular
     {
         Console.WriteLine("Celular desligado.");
     }
+    public virtual void FazerLigacao(string numero)
+    {
+        Console.WriteLine($"Ligando para {numero}...");
+    }
+
+    public virtual void EnviarMensagem(string numero, string mensagem)
+    {
+        Console.WriteLine($"Enviando mensagem para {numero}: {mensagem}");
+    }
+
+    public virtual void TirarFoto()
+    {
+        Console.WriteLine("Tirando uma foto...");
+    }
 }
 
 // Classes filhas (exemplos)
@@ -21,6 +35,10 @@ public class Iphone : Celular
     {
         Console.WriteLine("iPhone ligado com Face ID.");
     }
+    public void AtivarSiri()
+    {
+        Console.WriteLine("Ativando a Siri...");
+    }
 }
 
 public class Samsung : Celular
@@ -28,6 +46,10 @@ public class Samsung : Celular
     public override void Ligar()
     {
         Console.WriteLine("Samsung ligado com digital.");
+    }
+    public void MudarModoNoturno()
+    {
+        Console.WriteLine("Mudando para o modo noturno...");
     }
 }
 
