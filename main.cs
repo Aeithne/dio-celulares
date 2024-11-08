@@ -58,3 +58,8 @@ var galaxyS23 = new Samsung { Marca = "Samsung", Modelo = "Galaxy S23" };
 
 iphone14.Ligar(); // Saída: iPhone ligado com Face ID.
 galaxyS23.Ligar(); // Saída: Samsung ligado com digital.
+
+iphone14.FazerLigacao("123456789");
+iphone14.EnviarMensagem("987654321", "Olá!");
+iphone14.TirarFoto();
+iphone14.AtivarSiri();
